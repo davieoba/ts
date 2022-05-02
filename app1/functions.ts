@@ -10,10 +10,7 @@ const multiply = function (a: number, b: number): number {
   return a * b;
 };
 
-const logger = (
-  a: string,
-  b: string
-): { firstname: string; lastname: string } => {
+const logger = (a: string, b: string): { firstname: string; lastname: string } => {
   return {
     firstname: a,
     lastname: b,
