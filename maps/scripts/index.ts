@@ -10,10 +10,11 @@ const { lat, long }: { lat: number; long: number; } = user1.location
 const mapElement = document.querySelector('#map')
 // console.log(mapElement)
 
+
 new google.maps.Map(document.querySelector('#map'), {
   zoom: 1,
   center: {
     lat: 0,
-    lng: 0
+    lng: 1
   }
 })
