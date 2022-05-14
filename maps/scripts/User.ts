@@ -18,3 +18,6 @@ export class User {
   }
 }
 
+// const map1 = new google.maps.Map(document.getElementById('map'))
+
+// console.log(map1)
