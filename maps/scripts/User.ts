@@ -1,7 +1,7 @@
 import fakerEn from '@faker-js/faker/locale/en';
-
+import { CustomMap } from './Maps';
 // console.log(fakerEn.name.firstName())
-export class User {
+export class User implements CustomMap {
   // this is just telling ts the format it is not going to initialize this code 
   name: string
   location: {
@@ -15,6 +15,13 @@ export class User {
       lat: parseFloat(fakerEn.address.latitude()),
       long: parseFloat(fakerEn.address.longitude())
     }
+  }
+
+  markerContent(): string {
+    return `<div>
+              <h1> User name is: ${this.name} </h1>
+            </div>  
+            `
   }
 }
 
